@@ -95,7 +95,7 @@ export default function Header({ categories }: HeaderProps) {
           />
           
           {/* Mobile Menu */}
-          <nav className="fixed top-[89px] left-0 right-0 bg-white border-b border-gray-200 shadow-lg z-50 md:hidden">
+          <nav className="absolute top-full left-0 right-0 bg-white border-b border-gray-200 shadow-lg z-50 md:hidden">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
               <div className="flex flex-col gap-4">
                 <Link
