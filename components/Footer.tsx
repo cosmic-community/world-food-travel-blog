@@ -36,6 +36,11 @@ export default function Footer() {
                   Asian Cuisine
                 </a>
               </li>
+              <li>
+                <a href="/contact" className="text-gray-300 hover:text-accent transition-colors">
+                  Contact
+                </a>
+              </li>
             </ul>
           </div>
 

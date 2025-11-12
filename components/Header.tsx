@@ -65,6 +65,10 @@ export default function Header({ categories }: HeaderProps) {
                   {category.metadata.name}
                 </Link>
               ))}
+
+              <Link href="/contact" className="text-gray-700 hover:text-accent transition-colors">
+                Contact
+              </Link>
             </nav>
 
             {/* Mobile Menu Button */}
@@ -118,6 +122,14 @@ export default function Header({ categories }: HeaderProps) {
                     {category.metadata.name}
                   </Link>
                 ))}
+
+                <Link
+                  href="/contact"
+                  className="text-gray-700 hover:text-accent transition-colors py-2 border-b border-gray-100"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Contact
+                </Link>
               </div>
             </div>
           </nav>
