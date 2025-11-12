@@ -1,7 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import Header from '@/components/Header'
+import HeaderWrapper from '@/components/HeaderWrapper'
 import Footer from '@/components/Footer'
 import CosmicBadge from '@/components/CosmicBadge'
 
@@ -26,7 +26,7 @@ export default function RootLayout({
         <script src="/dashboard-console-capture.js"></script>
       </head>
       <body className={inter.className}>
-        <Header />
+        <HeaderWrapper />
         <main className="min-h-screen">
           {children}
         </main>

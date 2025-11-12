@@ -1,3 +1,4 @@
+// app/posts/[slug]/page.tsx
 import { cosmic, hasStatus } from '@/lib/cosmic'
 import { Post } from '@/types'
 import { notFound } from 'next/navigation'
@@ -108,7 +109,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
       </header>
 
       {/* Post Content */}
-      <div className="prose prose-lg max-w-none">
+      <div className="prose prose-lg">
         <ReactMarkdown>{post.metadata.content}</ReactMarkdown>
       </div>
     </article>
